@@ -1,0 +1,9 @@
+<ul class="animal-list">
+    {{#iterate cards '^(?!jcr:)'}}
+        <li>{{> tpl/partials/components/_animal-card.html this key=(concat 'cards/' @key)}}</li>            
+    {{/iterate}}
+    
+    {{#authoring}}
+        <li>{{> tpl/partials/components/_animal-card.html this key=(count cards '^(?!jcr:)' 'cards/card')}}</li>
+    {{/authoring}}
+</ul>

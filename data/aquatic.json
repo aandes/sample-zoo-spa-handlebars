@@ -1,0 +1,33 @@
+{
+
+    "jcr:content": {
+
+        "jcr:title": "Zoo SPA/Handlebars (Components Rendered in APP): Aquatic animals",
+
+        "cards" : {
+            "card-one": {
+                "title": "Dolphin",
+                "description": "Dolphin description",
+                "image": {"filePath": "img/dolphin.png"}
+            },
+            "card-two": {
+                "title": "Turtle",
+                "description": "Turtle description",
+                "image": {"filePath": "img/turtle.png"}
+            }
+        },
+
+        "links": {
+            "prev-page": {
+                "href": "./", 
+                "text": "Homepage"
+            },
+            "next-page": {
+                "href": "./terrestrial.html",
+                "text": "Terrestrial"
+            }
+        }
+
+    }
+
+}

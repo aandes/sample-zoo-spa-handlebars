@@ -1,0 +1,30 @@
+{
+  "name": "sample-zoo-spa-handlebars",
+  "version": "1.0.0",
+  "description": "A simple jQuery/handlebars single page app that leverages RAPID for authoring",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aandes/sample-zoo-spa-handlebars.git"
+  },
+  "keywords": [
+    "rapid",
+    "cms",
+    "decoupled",
+    "aem",
+    "headless",
+    "cq5"
+  ],
+  "author": "AandEs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aandes/sample-zoo-spa-handlebars/issues"
+  },
+  "homepage": "https://github.com/aandes/sample-zoo-spa-handlebars#readme",
+  "devDependencies": {
+    "express": "^4.15.2"
+  }
+}

@@ -1,0 +1,33 @@
+{
+
+    "jcr:content": {
+
+        "jcr:title": "Zoo SPA/Handlebars (Components Rendered in APP): Terrestrial animals",
+
+        "cards" : {
+            "card-one": {
+                "title": "Panda",
+                "description": "Panda description",
+                "image": {"filePath": "img/panda.png"}
+            },
+            "card-two": {
+                "title": "Elephant",
+                "description": "Elephant description",
+                "image": {"filePath": "img/elephant.png"}
+            }
+        },
+
+        "links": {
+            "prev-page": {
+                "href": "./aquatic.html", 
+                "text": "Aquatic"
+            },
+            "next-page": {
+                "href": "./",
+                "text": "Homepage"
+            }
+        }
+
+    }
+
+}

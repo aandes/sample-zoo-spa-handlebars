@@ -1,0 +1,21 @@
+{
+    "jcr:content": {
+
+        "jcr:title": "Zoo SPA/Handlebars (Components Rendered in APP)",
+
+        "zoo-title": {
+            "jcr:title": "Welcome to the Headless SPA/Handlebars Zoo!"
+        },
+
+        "zoo-description": {
+            "text": "A zoo (short for zoological garden or zoological park and also called an animal park or menagerie) is a facility in which animals are confined within enclosures, displayed to the public, and in which they may also breed."
+        },
+
+        "see-aquatic-btn": {
+            "href": "aquatic.html",
+            "text": "See Aquatic Animals"
+        }
+
+    }
+
+}

@@ -1,0 +1,9 @@
+<div class="button-list">
+    {{#iterate links '^(?!jcr:)'}}
+        {{> tpl/partials/components/_link-button.html this key=(concat 'links/' @key)}}
+    {{/iterate}}
+
+    {{#authoring}}
+        {{> tpl/partials/components/_link-button.html this key=(count links '^(?!jcr:)' 'links/link')}}
+    {{/authoring}}
+</div>
