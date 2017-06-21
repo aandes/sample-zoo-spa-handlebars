@@ -1,6 +1,6 @@
 {
   "name": "sample-zoo-spa-handlebars",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple jQuery/handlebars single page app that leverages RAPID for authoring",
   "main": "app.js",
   "scripts": {
