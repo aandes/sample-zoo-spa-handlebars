@@ -7,8 +7,10 @@ To run this app
 - Ensure Node.js is installed
 - Run AEM
 - Install RAPID
-- Upload this app's aem bundle under ./aem_content
+- This app uses custom AEM components:
+    - The AEM package that contains those components is located under the `./aem_content` directory
+    - Upload and install the AEM package (e.g. using AEM's package manager)
 - Open a terminal/cmd window and cd to the directory containing this file
 - run `npm install` to install a development server
 - run `npm start` to start the development server
-- Go to http://localhost:3000
+- Navigate to `http://localhost:3000`
