@@ -4,7 +4,7 @@
 
         authoring: function () {
 
-            return document.querySelector("head script[src*='/~rapid/edit/']") !== null
+            return document.querySelector("head script[src*='/bin/~rapid/edit.']") !== null
             && (typeof rapidBeta === 'function')
             && !!rapidBeta('mirror.data.cms.page.getResourcePath');
 
