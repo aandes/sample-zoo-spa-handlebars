@@ -1,29 +1,46 @@
-(function ($) {
+/*global spa, rapid*/
 
-    var api                         = {
+(function($) {
 
-        authoring: function () {
+    var api = {
 
-            return document.querySelector("head script[src*='/bin/~rapid/edit.']") !== null
-            && (typeof rapidBeta === 'function')
-            && !!rapidBeta('mirror.data.cms.page.getResourcePath');
-
+        authoring: function()
+        {
+            return window.rapid && 
+                rapid.mirror().isAuthoringEnabled();
         },
 
-        getContent: function (view) {
-            
-            if (api.authoring()) {
+        cmsOrigin: function()
+        {
+            return spa.userData.cmsOrigin;
+        },
 
-                return $.getJSON(rapidBeta('mirror.data.cms.page.getResourcePath')() + '.infinity.json');
-
-            }
+        getContent: function(view)
+        {
             
-            return $.getJSON('data' + view.replace('.html', '.json'));
+            var cfg = spa.userData; // <- see /spa.json
+            var path = view.replace(/\.html$/, '');
+            var contentUrl = cfg.cmsContentPath.replace(/\$\{path\}/, path);
+
+            return $.ajax({
+                dataType: 'json',
+                url: api.cmsOrigin() + contentUrl,
+                // note that we wouldn't need the
+                // following on a publish instance
+                xhrFields: { withCredentials: true }
+            });
             
         }
 
     };
     
-    window.app                          = api;
+    // dispatch by the custom components
+    window.addEventListener('cmscomponentchange', function(e)
+    {   
+        e.preventDefault(); // don't reload the page
+        spa.view.refresh(); // instead refresh the view
+    }, false);
+    
+    window.app = api;
 
-} (jQuery));
+}(window.jQuery));

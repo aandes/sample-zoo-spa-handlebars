@@ -1,3 +1,0 @@
-.linkbutton {display: inline-block}
-.linkbutton + [class*="cq-placeholder"],
-.linkbutton ~ [class*="cq-placeholder"]{display: none!important}

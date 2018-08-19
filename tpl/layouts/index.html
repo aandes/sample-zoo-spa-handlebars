@@ -1,8 +1,13 @@
 <div class="container">
 
-    <h1 data-designmode="zoo-title">{{? 'zoo-title.jcr:title' 'Please provide a title'}}</h1>
-    <p data-designmode="zoo-description">{{? 'zoo-description.text' 'Please provide a description'}}</p>
+    <h1 {{contentkey 'zoo-title'}}>
+        {{? 'zoo-title.jcr:title' 'Please provide a title'}}
+    </h1>
+
+    <p {{contentkey 'zoo-description'}}>
+        {{{? 'zoo-description.text' 'Please provide a description'}}}
+    </p>
 
     {{> tpl/partials/components/_link-button.html see-aquatic-btn key='see-aquatic-btn'}}
-
+    
 </div>

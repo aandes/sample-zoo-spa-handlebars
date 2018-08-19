@@ -45,6 +45,7 @@
         
             templates: {},
             
+            userData: {},
             document: null,
             history: null,
             view: null,
@@ -252,6 +253,11 @@
         if (manifest[globalConfig]) {
 
             config                          = $.extend(config, manifest[globalConfig].config);
+
+            if (manifest[globalConfig].userData)
+            {
+                spa.userData                = $.extend(spa.userData, manifest[globalConfig].userData);
+            }
 
             if (!manifest[globalConfig].loaded) {
 
@@ -740,7 +746,7 @@
 
     function getOrigin (location) {
 
-        return location.origin || (location.protocol + location.host);
+        return location.origin || (location.protocol + '//' + location.host);
 
     }
 

@@ -1,5 +1,10 @@
 {
     "*" : {
+
+        "userData": {
+            "cmsOrigin": "http://localhost:4502",
+            "cmsContentPath": "/content/sample-zoo-spa-handlebars${path}.infinity.json"
+        },
         
         "config": {
             "preloadAssets"     : ["css", "js", "tpl", "img"],
@@ -23,7 +28,6 @@
 
         "css"   : [
             "https://fonts.googleapis.com/css?family=Lato", 
-            "css/aem-components.css",
             "css/components.css",
             "css/global.css"
         ],
@@ -45,7 +49,6 @@
     "/aquatic.html": {
 
         "tpl"   : ["tpl/layouts/animal-page.html", "tpl/partials/_animal-list.html", "tpl/partials/_button-list.html",  "tpl/partials/components/_animal-card.html"],
-        "img"   : ["img/dolphin.png", "img/turtle.png"],
         "js"    : ["js/view/aquatic-terrestrial.js"]
     
     },
@@ -53,7 +56,6 @@
     "/terrestrial.html": {
 
         "tpl"   : ["tpl/layouts/animal-page.html", "tpl/partials/_animal-list.html", "tpl/partials/_button-list.html",  "tpl/partials/components/_animal-card.html"],
-        "img"   : ["img/elephant.png", "img/panda.png", "img/hippopotamus.png"],
         "js"    : ["js/view/aquatic-terrestrial.js"]
     
     }
